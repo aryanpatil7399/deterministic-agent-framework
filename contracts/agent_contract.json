@@ -1,0 +1,10 @@
+{
+    "agent_id": "deterministic_agent",
+    "schema_version": "v1.0.0",
+    "input_schema": {
+        "$ref": "../schemas/input_schema.json"
+    },
+    "output_schema": {
+        "$ref": "../schemas/output_schema.json"
+    }
+}

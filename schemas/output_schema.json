@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "AgentOutput",
+    "type": "object",
+    "properties": {
+        "agent_id": {
+            "type": "string",
+            "description": "Identifier of the agent that produced this output"
+        },
+        "schema_version": {
+            "type": "string",
+            "description": "Version of the output schema used"
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "success",
+                "error"
+            ],
+            "description": "Execution status"
+        },
+        "result": {
+            "description": "The result payload of the execution on success",
+            "type": [
+                "object",
+                "null"
+            ]
+        },
+        "error": {
+            "description": "Error details on failure",
+            "type": [
+                "object",
+                "string",
+                "null"
+            ]
+        }
+    },
+    "required": [
+        "agent_id",
+        "schema_version",
+        "status"
+    ],
+    "additionalProperties": false
+}

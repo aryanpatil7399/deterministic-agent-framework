@@ -1,0 +1,93 @@
+﻿Agent initialized successfully!
+
+==================== ECHO Task ====================
+Execution Flow:
+  -> Input Received
+  -> Validation against Schema
+  -> Registry Lookup for Tool
+  -> Tool Execution
+  -> Output Validation against Schema
+
+Result:
+{
+  "agent_id": "deterministic_agent",
+  "schema_version": "v1.0.0",
+  "status": "success",
+  "result": {
+    "result": "Hello World!"
+  }
+}
+
+==================== SUM_NUMBERS Task ====================
+Execution Flow:
+  -> Input Received
+  -> Validation against Schema
+  -> Registry Lookup for Tool
+  -> Tool Execution
+  -> Output Validation against Schema
+
+Result:
+{
+  "agent_id": "deterministic_agent",
+  "schema_version": "v1.0.0",
+  "status": "success",
+  "result": {
+    "result": 6
+  }
+}
+
+==================== UPPERCASE_TEXT Task ====================
+Execution Flow:
+  -> Input Received
+  -> Validation against Schema
+  -> Registry Lookup for Tool
+  -> Tool Execution
+  -> Output Validation against Schema
+
+Result:
+{
+  "agent_id": "deterministic_agent",
+  "schema_version": "v1.0.0",
+  "status": "success",
+  "result": {
+    "result": "HELLO DETERMINISTIC AGENT"
+  }
+}
+
+==================== Invalid Input (extra field schema violation) ====================
+Execution Flow:
+  -> Input Received
+  -> Validation against Schema
+  -> Registry Lookup for Tool
+  -> Tool Execution
+  -> Output Validation against Schema
+
+Result:
+{
+  "agent_id": "deterministic_agent",
+  "schema_version": "v1.0.0",
+  "status": "error",
+  "result": {
+    "type": "ValidationError",
+    "message": "Additional properties are not allowed ('extra_field' was unexpected)",
+    "path": []
+  }
+}
+
+==================== Unsupported Task Type ====================
+Execution Flow:
+  -> Input Received
+  -> Validation against Schema
+  -> Registry Lookup for Tool
+  -> Tool Execution
+  -> Output Validation against Schema
+
+Result:
+{
+  "agent_id": "deterministic_agent",
+  "schema_version": "v1.0.0",
+  "status": "error",
+  "result": {
+    "message": "Unsupported task type: UNKNOWN_TASK"
+  }
+}

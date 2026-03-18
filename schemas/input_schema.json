@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentInput",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "description": "Unique identifier for the user"
+    },
+    "task_type": {
+      "type": "string",
+      "description": "The type or category of the task"
+    },
+    "payload": {
+      "type": "object",
+      "description": "Task-specific payload data"
+    }
+  },
+  "required": ["user_id", "task_type", "payload"],
+  "additionalProperties": false
+}

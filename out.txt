@@ -1,0 +1,15 @@
+test_determinism_same_input_twice (test_agent.TestDeterministicAgent.test_determinism_same_input_twice) ... ok
+test_invalid_schema_extra_field (test_agent.TestDeterministicAgent.test_invalid_schema_extra_field) ... ok
+test_missing_required_field (test_agent.TestDeterministicAgent.test_missing_required_field) ... ok
+test_registry_extension (test_agent.TestDeterministicAgent.test_registry_extension) ... ok
+test_registry_returns_fresh_tool_instances (test_agent.TestDeterministicAgent.test_registry_returns_fresh_tool_instances) ... ok
+test_strict_determinism_5_times (test_agent.TestDeterministicAgent.test_strict_determinism_5_times) ... ok
+test_unsupported_task_type (test_agent.TestDeterministicAgent.test_unsupported_task_type) ... ok
+test_valid_input_echo (test_agent.TestDeterministicAgent.test_valid_input_echo) ... ok
+test_valid_input_sum_numbers (test_agent.TestDeterministicAgent.test_valid_input_sum_numbers) ... ok
+test_valid_input_uppercase_text (test_agent.TestDeterministicAgent.test_valid_input_uppercase_text) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.610s
+
+OK
